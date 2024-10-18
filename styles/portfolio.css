@@ -12,12 +12,16 @@
 }
 
 /* Shared styles */
-h4 {
+h3 {
     font-size: 45px;
 }
 
-h3 {
+h4 {
     font-size: 35px;
+}
+
+h5 {
+    font-size: 20px;
 }
 
 .primary-color {
@@ -49,7 +53,7 @@ h3 {
     font-size: 20px;
 }
 
-
+/* header styles */
 .header{
     background-image: url(../images/developer.png), url(../images/header_bg.png);
     background-repeat: no-repeat;
@@ -110,8 +114,67 @@ nav li a {
     font-weight: 700;
 }
 
+.banner-description{
+    margin: 20px 0 30px 0;
+}
+
+.banner-btn {
+    display: flex;
+    gap: 30px;
+}
+
+.btn-secondary {
+    background-color: #FFF8F3;
+    border: 2px solid #FD6E0A;
+    border-radius: 5px;
+    color: #FD6E0A;
+    padding: 20px 35px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
 .banner-image {
     width: 584px;
     height: 676px;
     flex-shrink: 0;
 }
+
+/* main styles */
+main{
+    margin: 130px 230px;
+}
+
+/* about me section styles */
+.about-me-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 131px 156px;
+    background-color: #FFF8F3;
+    border-radius: 10px;
+    margin-bottom: 130px;
+}
+
+.about-me-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-description{
+    margin: 30px 0;
+}
+
+.about-me-contact{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+}
+
+.about-me-contact-item{
+    font-size: 20px;
+}
+
+/* skills section styles */
