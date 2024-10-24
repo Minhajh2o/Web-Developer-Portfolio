@@ -8,7 +8,7 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:
-        "wdth" 100;
+        "width" 100;
 }
 
 /* Shared styles */
@@ -55,10 +55,10 @@ h6 {
     color: #FD6E0A;
 }
 
-.btn-primary {
+.btn-primary, .download-btn{
     background-color: #FD6E0A;
-    /* width: 150px;
-    height: 64px; */
+    width: 150px;
+    height: 64px;
     flex-shrink: 0;
     border: none;
     border-radius: 5px;
@@ -66,6 +66,10 @@ h6 {
     padding: 20px 35px;
     font-weight: 700;
     font-size: 20px;
+}
+
+.download-btn{
+    width: 200px;
 }
 
 .description {
@@ -82,20 +86,27 @@ P {
     color: #757575;
 }
 
+.text-center{
+    text-align: center;
+}
+
 /* header styles */
 .header {
+    padding-top: 50px;
     background-image: url(../images/developer.png), url(../images/header_bg.png);
     background-repeat: no-repeat;
-    background-position: top left, bottom right;
+    background-position: left, bottom right;
     background-color: #FFF8F3;
 }
 
 /* nav bar styles */
-nav {
+nav, nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 50px 230px;
+}
+nav{
+    padding: 20px 230px;
 }
 
 .nav-title {
@@ -267,6 +278,38 @@ hr {
     border: 1px solid #D1D1D1;
     width: 511px;
 }
-.text-center{
-    text-align: center;
+
+
+/* footer styles */
+footer{
+    background-color: #FFF8F3;
+    padding: 130px 230px;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 170px; */
 }
+
+footer p{
+    width: 500px;
+    margin: 20px 0 30px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 28px;
+}
+
+input, textarea{
+    padding: 18px 30px;
+    width: 450px;
+    border: none;
+    border-radius: 5px;
+}
+
